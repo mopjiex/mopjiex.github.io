@@ -1,64 +1,29 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <script src="js/index.js" defer></script>
-    <title>js30#2.1-random-jokes</title>
+	<meta charset="utf-8">
+	<title>Записная книжка</title>
 </head>
 <body>
-    <div class="wrap">
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <div class="undefined"></div>
-                   <div class="header__radio">
-                    <div class="form_radio_btn">
-                        <input id="ru" type="radio" name="language" value="ru" checked>
-                        <label for="ru">Ru</label>
-                    </div>
-                    <div class="form_radio_btn">
-                        <input id="en" type="radio" name="language" value="en">
-                        <label for="en">En</label>
-                    </div>
-                   </div>
-                </div>
-            </div>  
-        </header>
-        
-        <main class="main">
-                    <div>
-                        <a href="#" class="main__link">Нажми меня</a>
-                    </div>
-                   <div class="container">
-                    <div class="main__text">
-                        <p class="main_text-text">123</p>
-                        <p class="main_text-author">1231</p>
-                    </div>
-                   </div>   
-        </main>
-    
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__inner">
-                    <div class="github">
-                        <p class="footer__text">2022</p>
-                        <a class="footer__link" href="https://github.com/mopjiex" target="_blank">Github</a>
-                    </div>
-                    <a class="footer__logo-link" href="https://rs.school/" target="_blank"><img src="/images/logo.png" alt="" class="footer__logo"></a>
-                </div>
-            </div>
-        </footer>
-    </div>
+	<h4><font style="bold">Записная книжка</font></h4>
+	<form action="lab9_2.php" method="post">
+		<p>Введите фамилию и имя [*]: 
+			<input required type="text" name="name">
+		</p>
+		<p>Введите город: 
+			<input type="text" name="city">
+		</p>
+		<p>Введите адрес: 
+			<input type="text" name="address">
+		</p>
+		<p>Введите дату рождения в формате ГГГГ-ММ-ДД: 
+			<input type="date" name="dob">
+		</p>
+		<p>Введите email [*]: 
+			<input required type="text" name="email">
+		</p>
+		<button type="submit">Записать</button>
+	</form>
+	<p>Поля, помеченные [*], являются обязательными для заполнения!</p>
 </body>
 </html>
